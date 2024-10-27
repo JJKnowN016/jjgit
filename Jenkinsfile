@@ -4,7 +4,7 @@ node('JDK8'){
 	git branch: '*/sprint1_develop', url: 'https://github.com/dhushyadav/game-of-life.git'
 
         }   
-	stage {'buidl the code'){
+	stage ('buidl the code'){
 
 	sh 'mvn package'
 	
